@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculation Assignment</title>
+</head>
+
+<style>
+tr, th, td {
+	border: 1px solid black;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+table {
+	border: 1px solid black;
+}
+button {
+	background-color: green;
+	color: white;
+}
+</style>
+
+<body>
+
+	 <form id="form">
+	 
+		<label for="name">Name: </label>
+		<input type="text" id="name"/>
+		
+		<br>
+		<br>
+		
+		
+		<label for="email">Email: </label>
+		<input type="text" id="email"/>
+		
+		<br>
+		<br>
+		
+		
+		<label for="mobile">Mobile: </label>
+		<input type="text" id="mobile"/>
+		
+		<br>
+		<br>
+		
+		
+		<button type="button" onclick="appendData()">Add</button>
+		 
+	 </form>
+	
+	<br>
+
+	 <button type="submit" onclick="removeLastElement()">POP</button>
+	<br>
+	
+	<br>
+	
+	<table id="table">
+		<tr>
+			<th>Name</th>
+			<th>Email</th>
+			<th>Mobile No</th>
+		</tr>
+	</table>
+	
+	
+	 
+	<script type="module">
+		import {appendData} from "./appendData.js";
+		import {arrayOfObject} from "./createTableView.js";
+		import {removeLastElement} from "./removeLastElement.js";
+		window.appendData = appendData;
+		window.removeLastElement = removeLastElement;
+	</script>	
+	
+</body>
+</html>

@@ -45,15 +45,29 @@ button {
 		<br>
 		<br>
 		
-		
-		<button type="button" onclick="appendData()">Add</button>
-		 
+			 
 	 </form>
 	
+
 	<br>
 
-	 <button type="submit" onclick="removeLastElement()">POP</button>
-	<br>
+	 <button type="button" onclick="appendData()">Add</button>
+
+
+	 <button type="submit" onclick="addElementToTop()">addElementToTop</button>
+
+	 <button type="submit" onclick="addElementAtIndex()">addElementAtIndex</button>
+
+	 <button type="submit" style="background-color: blue;" onclick="parseCSVString()">parseCSVString</button>
+
+	 <button type="submit" style="background-color: red;" onclick="removeLastElement()">POP</button>
+
+	 <button type="submit" style="background-color: red;" onclick="removeElementAtIndex()">removeElementAtIndex</button>
+
+	
+
+	 <br>
+
 	
 	<br>
 	
@@ -71,8 +85,17 @@ button {
 		import {appendData} from "./appendData.js";
 		import {arrayOfObject} from "./createTableView.js";
 		import {removeLastElement} from "./removeLastElement.js";
+		import {removeElementAtIndex} from "./removeElementAtIndex.js";
+		import {addElementToTop} from "./addElementToTop.js";
+		import {addElementAtIndex} from "./addElementAtIndex.js";
+		import {parseCSVString} from "./parseCSVString.js";
+
 		window.appendData = appendData;
 		window.removeLastElement = removeLastElement;
+		window.removeElementAtIndex = removeElementAtIndex;
+		window.addElementToTop = addElementToTop;
+		window.addElementAtIndex = addElementAtIndex;
+		window.parseCSVString = parseCSVString;
 	</script>	
 	
 </body>
